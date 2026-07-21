@@ -20,3 +20,5 @@ Start-Job -ScriptBlock {
         Select-Object Name, BaseType | 
         Out-GridView
 }
+
+Write-Host "`n`r End of Script" -ForegroundColor Green
