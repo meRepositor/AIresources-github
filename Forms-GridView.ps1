@@ -1,4 +1,4 @@
-# Load the forms assembly module into your current memory session
+1# Load the forms assembly module into your current memory session
 Add-Type -AssemblyName System.Windows.Forms
 
 # Query the assembly to list every public class type that handles UI controls
