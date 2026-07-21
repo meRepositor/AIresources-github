@@ -9,10 +9,8 @@ Add-Type -AssemblyName System.Windows.Forms
     Select-Object Name, BaseType | 
     Out-GridView
 
-3 # End of script. 
-# End of script (EOS). Code added below EOS: 
-
-
+3 <# End of script. <# End of script (EOS). Code added below EOS: 
+ #>
 Start-Job -ScriptBlock {
     Add-Type -AssemblyName System.Windows.Forms
     [System.Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms").GetTypes() | 
@@ -21,4 +19,4 @@ Start-Job -ScriptBlock {
         Out-GridView
 }
 
-Write-Host "`n`r End of Script" -ForegroundColor Green
+Write-Host "End of Script" -ForegroundColor Green
